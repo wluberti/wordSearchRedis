@@ -1,3 +1,4 @@
 /redis-data
 /logs
 /webroot/wordlist.txt
+/webroot/vendor
