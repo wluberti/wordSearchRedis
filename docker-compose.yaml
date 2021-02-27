@@ -14,7 +14,7 @@ services:
       - php
 
   php:
-    image: php:fpm
+    image: php:7.3-fpm
     volumes:
       - ./webroot:/var/www/html
     depends_on:

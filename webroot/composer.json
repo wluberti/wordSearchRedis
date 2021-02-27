@@ -1,5 +1,17 @@
 {
+    "name": "wluberti/wordsearchredis",
+    "description": "A Simple word / dictionary using Redis",
     "require": {
-        "predis/predis": "^1.1"
+        "predis/predis": "^1.1",
+        "slim/slim": "^4.7",
+        "slim/http": "^1.2"
+    },
+    "config": {
+        "notify-on-install": false,
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "platform": {
+            "php": "7.3.27"
+        }
     }
 }
