@@ -7,16 +7,16 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./webroot:/var/www/myapp
+      - ./webroot:/var/www/html
       - ./logs:/var/log/nginx:rw
-      - ./config/site.conf:/etc/nginx/conf.d/default.conf
+      - ./site.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - php
 
   php:
     image: php:fpm
     volumes:
-      - ./webroot:/var/www/myapp
+      - ./webroot:/var/www/html
     depends_on:
       - redis
 
